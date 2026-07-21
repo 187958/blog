@@ -215,10 +215,19 @@ plugins:
     enabled: true
     options:
       links:
-        GitHub: https://github.com/jackyzha0/quartz
-        Discord Community: https://discord.gg/cRFFHYye7t
+        GitHub: https://github.com/187958/blog
   - source: github:quartz-community/recent-notes
-    enabled: false
+    enabled: true
+    options:
+      title: 最新笔记
+      limit: 5
+      showTags: true
+      linkToMore: false
+      hideTagPages: true
+      hideFolderPages: true
+    layout:
+      position: right
+      priority: 20
   - source: github:quartz-community/spacer
     enabled: true
     options: {}
