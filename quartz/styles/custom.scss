@@ -11,3 +11,29 @@ body {
 :root[saved-theme="dark"] body {
   background-image: url("./static/formula-bg-dark.svg");
 }
+
+// 首页隐藏关系图谱（文章页保留）
+body[data-slug="index"] .graph {
+  display: none;
+}
+
+// 「最新笔记」标签改为紧凑横向排列（默认是带圆点的竖排列表，太占空间）
+.recent-notes .tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem 0.4rem;
+  list-style: none;
+  padding: 0;
+  margin: 0.15rem 0 0;
+}
+
+.recent-notes .tags li {
+  margin: 0;
+  padding: 0;
+  font-size: 0.75rem;
+}
+
+// 「最新笔记」中混入了 404 页面条目，隐藏掉
+.recent-li:has(a[href$="404"]) {
+  display: none;
+}
