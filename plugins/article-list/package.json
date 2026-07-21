@@ -1,0 +1,28 @@
+{
+  "name": "@blog/article-list",
+  "version": "1.0.0",
+  "description": "Homepage article card list with client-side pagination and date filtering",
+  "type": "module",
+  "license": "MIT",
+  "exports": {
+    ".": "./dist/index.js",
+    "./components": "./dist/components/index.js"
+  },
+  "main": "./dist/index.js",
+  "quartz": {
+    "name": "article-list",
+    "displayName": "Article List",
+    "description": "首页文章卡片列表：前端分页 + 日期筛选",
+    "category": "component",
+    "version": "1.0.0",
+    "quartzVersion": ">=5.0.0",
+    "defaultEnabled": true,
+    "components": {
+      "ArticleList": {
+        "displayName": "Article List",
+        "defaultPosition": "beforeBody",
+        "defaultPriority": 40
+      }
+    }
+  }
+}

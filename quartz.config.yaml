@@ -41,6 +41,17 @@ configuration:
         highlight: rgba(143, 159, 169, 0.15)
         textHighlight: "#b3aa0288"
 plugins:
+  - source: ./plugins/article-list
+    enabled: true
+    layout:
+      position: beforeBody
+      priority: 40
+  - source: ./plugins/blog-calendar
+    enabled: true
+    layout:
+      position: right
+      priority: 25
+      display: desktop-only
   - source: github:quartz-community/created-modified-date
     enabled: true
     options:

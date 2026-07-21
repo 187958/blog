@@ -1,0 +1,28 @@
+{
+  "name": "@blog/blog-calendar",
+  "version": "1.0.0",
+  "description": "Sidebar calendar highlighting post dates; clicking a date filters the homepage article list",
+  "type": "module",
+  "license": "MIT",
+  "exports": {
+    ".": "./dist/index.js",
+    "./components": "./dist/components/index.js"
+  },
+  "main": "./dist/index.js",
+  "quartz": {
+    "name": "blog-calendar",
+    "displayName": "Blog Calendar",
+    "description": "右栏月历：高亮有文章的日期，点击筛选首页列表",
+    "category": "component",
+    "version": "1.0.0",
+    "quartzVersion": ">=5.0.0",
+    "defaultEnabled": true,
+    "components": {
+      "BlogCalendar": {
+        "displayName": "Blog Calendar",
+        "defaultPosition": "right",
+        "defaultPriority": 25
+      }
+    }
+  }
+}
